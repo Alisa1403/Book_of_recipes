@@ -1,154 +1,149 @@
-* {
-	box-sizing: border-box;
-}
-::before,
-::after {
-	box-sizing: border-box;
-}
 
-body {
-	background-color: #F5DEB3;
-	font-family: 'Lora', serif;
-}
-
-a{
-	color: #A0522D;
-}
-
-img {max-width: 100%
-}
-.home{
-	text-decoration: none;
-	font-size: 110%
-}
-.home:hover {
-    text-decoration: underline;
-    color: #8B0000;
-	}
-
-.header {
+header {
 	margin: 0 auto;
 	padding: 0;
 	padding-top: 1.5%;
 	padding-bottom: 1.5%;
 	background-color: #fcf2cc;
 	display: flex;
-  list-style: none;
-	Justify-content: center;
-	border: 3px double #A0522D;
+	list-style: none;
+	justify-content: center;
+	border: 3px double #a0522d;
+  }
+
+body {
+  background-color: #f5deb3;
+  font-family: "Lora", serif;
 }
+
+a {
+  color: #a0522d;
+}
+
+img {
+  max-width: 100%;
+}
+
+.home {
+  text-decoration: none;
+  font-size: 110%;
+}
+.home:hover {
+  text-decoration: underline;
+  color: #8b0000;
+}
+
 .container {
-	max-width: 1140px;
-	padding: 0 0px;
-	margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 0px;
+  margin: 0 auto;
+  margin-top: 11%;
+  margin-bottom: 5%;
 }
-.container-main{
-	margin-top: 11%;
-	margin-bottom: 5%;
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-.row{
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-.category-list{
-	display: grid;
-	gap: 90px;
-	grid-column-gap: 40px;
-	grid-template-columns: repeat(3, 1fr);
+.category-list {
+  display: grid;
+  gap: 90px;
+  grid-column-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .category-item {
-	display: flex;
-	Justify-content: center;
-	flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .list-reset {
-	margin: 0 auto;
-	padding: 0;
-	list-style-type: none;
-	text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
 }
 
 .shadow {
-    background: #FEEDC4; /* Цвет фона */
-    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Параметры тени */
-    padding:5%;
-		margin-left: 4%;
-		margin-right: 4%;
-		padding-top:20px;
-	}
-.menu-main {
-	margin-bottom: 5px;
-	margin-top: 0px;
+  background: #feedc4; /* Цвет фона */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+  padding: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 20px;
 }
-.clearfix:after, .clf:after{
-	display: block;
-	content: " ";
-	clear: both;
-	height: 0;
+.menu-main {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+.clearfix:after,
+.clf:after {
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
-@media(max-width: 768px){
-  .category-list{
+@media (max-width: 768px) {
+  .category-list {
     gap: 100px;
     grid-column-gap: 50px;
     grid-template-columns: repeat(2, 1fr);
   }
-  .row{
+  .row {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 15%;
-    margin-bottom: 5%;}
+    margin-bottom: 5%;
+  }
 
-  .category-item{
+  .category-item {
     max-width: none;
+  }
 }
 
-}
-@media(max-width: 576px){
-  .category-list{
+@media (max-width: 576px) {
+  .category-list {
     gap: 80px;
     grid-column-gap: 60px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .row{
+  .row {
     margin-left: 15%;
-		margin-right: 15%;
+    margin-right: 15%;
     margin-top: 15%;
-    margin-bottom: 5%;}
-
-	.category-item{
-		font-size: 75%;
-}
-
-}
-
-
-@media(max-width: 426px){
-		.category-list{
-	    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 5%;
   }
-  .row{
-    margin-left: 15%;
-		margin-right: 15%;
-    margin-top: 15%;
-    margin-bottom: 15%;}
 
-
+  .category-item {
+    font-size: 75%;
+  }
 }
 
-@media(max-width: 376px){
-  .category-list{
+@media (max-width: 426px) {
+  .category-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .row {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+}
+
+@media (max-width: 376px) {
+  .category-list {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .row{
+  .row {
     margin-left: 15%;
-		margin-right: 15%;
+    margin-right: 15%;
     margin-top: 15%;
-    margin-bottom: 15%;}
-
+    margin-bottom: 15%;
+  }
 }
