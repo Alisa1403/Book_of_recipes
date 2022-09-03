@@ -1,15 +1,19 @@
-
+p {
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
 header {
-	margin: 0 auto;
-	padding: 0;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
-	background-color: #fcf2cc;
-	display: flex;
-	list-style: none;
-	justify-content: center;
-	border: 3px double #a0522d;
-  }
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color: #fcf2cc;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  border: 3px double #a0522d;
+}
 
 body {
   background-color: #f5deb3;
